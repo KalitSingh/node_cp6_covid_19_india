@@ -6,7 +6,7 @@ const {open} = require('sqlite')
 const sqlite3 = require('sqlite3')
 
 const path = require('path')
-const dbPath = path.join('.././coding-practice-6a', 'covid19India.db')
+const dbPath = path.join(__dirname, 'covid19India.db')
 
 let db = null
 const initializeDBAndServer = async () => {
